@@ -1,0 +1,29 @@
+<h1>Listing actionpoints</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Status</th>
+      <th>Datum</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actionpoints.each do |actionpoint| %>
+      <tr>
+        <td><%= actionpoint.action %></td>
+        <td><%= actionpoint.status %></td>
+        <td><%= actionpoint.datum %></td>
+        <td><%= link_to 'Show', actionpoint %></td>
+        <td><%= link_to 'Edit', edit_actionpoint_path(actionpoint) %></td>
+        <td><%= link_to 'Destroy', actionpoint, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actionpoint', new_actionpoint_path %>

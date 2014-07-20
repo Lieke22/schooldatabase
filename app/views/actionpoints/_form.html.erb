@@ -1,0 +1,29 @@
+<%= form_for(@actionpoint) do |f| %>
+  <% if @actionpoint.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@actionpoint.errors.count, "error") %> prohibited this actionpoint from being saved:</h2>
+
+      <ul>
+      <% @actionpoint.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :action %><br>
+    <%= f.text_field :action %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :datum %><br>
+    <%= f.date_select :datum %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Action:</strong>
+  <%= @actionpoint.action %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @actionpoint.status %>
+</p>
+
+<p>
+  <strong>Datum:</strong>
+  <%= @actionpoint.datum %>
+</p>
+
+<%= link_to 'Edit', edit_actionpoint_path(@actionpoint) %> |
+<%= link_to 'Back', actionpoints_path %>

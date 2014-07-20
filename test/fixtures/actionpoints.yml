@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  action: MyString
+  status: MyString
+  datum: 2014-07-20
+
+two:
+  action: MyString
+  status: MyString
+  datum: 2014-07-20

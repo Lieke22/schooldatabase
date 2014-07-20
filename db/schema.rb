@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140720153323) do
+ActiveRecord::Schema.define(version: 20140720182834) do
+
+  create_table "actionpoints", force: true do |t|
+    t.string   "action"
+    t.string   "status"
+    t.date     "datum"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "activities", force: true do |t|
+    t.string   "type"
+    t.string   "status"
+    t.date     "datum"
+    t.string   "name_user"
+    t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "contactpersoons", force: true do |t|
     t.string   "name"
@@ -34,6 +52,13 @@ ActiveRecord::Schema.define(version: 20140720153323) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

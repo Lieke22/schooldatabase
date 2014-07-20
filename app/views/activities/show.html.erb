@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @activity.type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @activity.status %>
+</p>
+
+<p>
+  <strong>Datum:</strong>
+  <%= @activity.datum %>
+</p>
+
+<p>
+  <strong>Verantwoordelijke:</strong>
+  <%= @activity.name_user %>
+</p>
+
+<p>
+  <strong>Opmerkingen:</strong>
+  <%= @activity.note %>
+</p>
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>
