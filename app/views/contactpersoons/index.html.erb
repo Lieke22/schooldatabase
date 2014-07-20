@@ -1,0 +1,33 @@
+<h1>Listing contactpersoons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Function</th>
+      <th>Mail</th>
+      <th>Telephone</th>
+      <th>Note</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contactpersoons.each do |contactpersoon| %>
+      <tr>
+        <td><%= contactpersoon.name %></td>
+        <td><%= contactpersoon.function %></td>
+        <td><%= contactpersoon.mail %></td>
+        <td><%= contactpersoon.telephone %></td>
+        <td><%= contactpersoon.note %></td>
+        <td><%= link_to 'Show', contactpersoon %></td>
+        <td><%= link_to 'Edit', edit_contactpersoon_path(contactpersoon) %></td>
+        <td><%= link_to 'Destroy', contactpersoon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contactpersoon', new_contactpersoon_path %>
