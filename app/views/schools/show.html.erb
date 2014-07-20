@@ -1,4 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading"><%= @school.name %></div>
+        <div class="panel-body">
+            <%= @school.address %><br />
+            <%= @school.postcode %> <%= @school.town %><br />
+            <%= @school.telephone %><br />
+            <%= @school.email %><br />
+            <%= link_to "www.albertschweitzer.nl", @school.website %>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Contactpersoon</div>
+        <div class="panel-body">
+          <ul>
+            <li>Erik Pragt</li>
+            <li>06-12345678</li>
+            <li>erik@albertschweitzer.nl</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Locatie</div>
+        <div class="panel-body">
+            <img src="http://www.mappery.com/maps/Bielefeld-Street-Map.mediumthumb.jpg" width="230px">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+
+
+
+    <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Naam school:</strong>
@@ -42,3 +76,8 @@
 
 <%= link_to 'Edit', edit_school_path(@school) %> |
 <%= link_to 'Back', schools_path %>
+
+
+    </div>
+  </div>
+</div>
