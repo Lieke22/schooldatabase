@@ -1,0 +1,36 @@
+
+
+1. Als gebruiker wil ik in kunnen loggen
+    Dod:    home pagina wordt inlogpagina
+
+2. Als gebruiker wil ik een 'mijn homepagina' met nieuws van de organisatie, overzicht van mijn urgente en afgehandelde taken
+    DoD:    mijn pagina met welkomstboodschap gebruiker
+            rechts panel met nieuws via twitterfeed
+            activiteiten en afgehandelde activiteiten
+            mogelijkheid om status activiteit te veranderen
+            mogelijkheid nieuwe activiteit toe te voegen
+            links naar scholen, contactpersonen en activiteiten
+
+3. Als gebruiker wil ik een pagina met een overzicht van alle scholen, de mogelijkheid om een school toe te voegen en een zoekfunctie
+    DoD:    overzicht met naam school, postcode, plaats en status
+            zoekfunctie
+            Nieuwe school knop
+
+4. Als gebruiker wil per school alle bestaande informatie (adres, kaart, contacten, activiteiten) kunnen inzien inclusief acties
+    DoD:    dashboard pagina met zoekfunctie zoeken tussen scholen
+            dropdown menu om te switchen tussen alle scholen en alle contactpersonen
+            naam school wordt weergegeven
+            linker menu panel met contactpersoon bijbehorend aan school
+            menu met adres school
+            kaart
+            Acties worden weergegeven en de belangrijkste acties worden bovenaan weer gegeven met een kleur
+            Mogelijkheden om acties en contactpersonen te kunnen toevoegen
+            Mogelijkheid om acties, contactpersonen en school te kunnen bewerken.
+
+
+5.  Als gebruiker wil ik alle contactpersonen kunnen bekijken, kunnen toevoegen en hierin zoeken
+    DoD:    overzicht contactpersonen, naam school
+            zoekfunctie
+            nieuw contactpersoon knop
+            nieuw contactpersoon wordt gekoppeld aan school
+
